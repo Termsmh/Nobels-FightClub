@@ -22,6 +22,22 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void OnCrouch(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Debug.Log("Crouch");
+        }
+    }
+
+    public void OnAttackLight(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Debug.Log("Normal Attack");
+        }
+    }
+
 
     private void Update()
     {
